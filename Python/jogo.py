@@ -1,6 +1,5 @@
 import random
 
-
 def jogar():
     print("*************************************")
     print("Ola mundo. Este é meu primeiro jogo.")

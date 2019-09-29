@@ -1,19 +1,22 @@
+import random
+
 def jogar():
 
-    print("*************************************")
-    print("Ola mundo. Este é meu jogo de forca")
-    print("*************************************")
+    boas_vindas()
 
-    palavra_secreta = "Oi".upper()
     todas_as_letras = []
     erros = 0
     arquivo = open("palavras.txt", "r")
+    palavras = []
 
     for linha in arquivo:
-        linha = linha.strip()
+        linha = linha.strip().upper()
         palavras.append(linha)
 
     arquivo.close()
+
+    numero = random.randrange(0, len(palavras))
+    palavra_secreta = palavras[numero].upper()
 
     for n in palavra_secreta:
         todas_as_letras.append("_")
@@ -50,3 +53,9 @@ def jogar():
 
 if (__name__ == "__main__"):
     jogar()
+
+
+def boas_vindas():
+    print("*************************************")
+    print("Ola mundo. Este é meu jogo de forca")
+    print("*************************************")
