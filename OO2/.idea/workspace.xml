@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12cf9a79-7d5c-4dbc-9a82-388c97dd61da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/teste.py" beforeDir="false" afterPath="$PROJECT_DIR$/teste.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +35,8 @@
   <component name="ProjectId" id="1RqTZEVMUBiaB5hiLjKSRMdla74" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../testes-python-projeto-inicial" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -124,7 +125,35 @@
       <option name="project" value="LOCAL" />
       <updated>1570570871304</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="A nice update :)">
+      <created>1570826147552</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1570826147552</updated>
+    </task>
+    <task id="LOCAL-00007" summary="A nice update :)">
+      <created>1570826589426</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1570826589426</updated>
+    </task>
+    <task id="LOCAL-00008" summary="A nice update :)">
+      <created>1570826658091</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1570826658091</updated>
+    </task>
+    <task id="LOCAL-00009" summary="A nice update :)">
+      <created>1570826786657</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1570826786657</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,7 +161,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -143,6 +174,7 @@
     <MESSAGE value="Made some modifications to the code. Too boring to write everything ..." />
     <MESSAGE value="..." />
     <MESSAGE value="I can't update my github" />
-    <option name="LAST_COMMIT_MESSAGE" value="I can't update my github" />
+    <MESSAGE value="A nice update :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="A nice update :)" />
   </component>
 </project>
