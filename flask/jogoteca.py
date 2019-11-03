@@ -1,6 +1,7 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, session, flash
 
 app = Flask(__name__)
+app.secret_key = 'alura'
 
 class Cria_Jogo:
     def __init__(self, nome, categoria):
@@ -17,6 +18,9 @@ def index():
 
 @app.route('/novo')
 def novo():
+    if 'usuario_logado' not in session or session['usuario_logado'] == None:
+        return redirect('/login?proxima=novo')
+    
     return render_template('novo.html', titulo="Novo jogo")
 
 @app.route('/criar', methods=['POST'],)
@@ -28,5 +32,28 @@ def criar():
     jogos.append(jogo)
 
     return redirect('/')
+
+@app.route('/login')
+def login():
+    proxima = request.args.get('proxima')
+    return render_template('login.html', proxima = proxima)
+
+@app.route('/autenticar', methods=['POST', ])
+def autenticar():
+    if 'alura' == request.form['senha']:
+        session['usuario_logado'] = request.form['usuario']
+        flash('Usuário => ' + request.form['usuario'] + ' logou com sucesso!')
+        proxima_pagina = request.form['proxima']
+        return redirect('/{}'.format(proxima_pagina))
+    else:
+        flash('Não logado, tente novamente!')
+        return redirect('/login')
+
+@app.route('/logout')
+def logout():
+    session['usuario_logado'] = None
+    flash('Nenhum usuário logado!')
+    return redirect('/')
+    
 
 app.run(debug=True)
